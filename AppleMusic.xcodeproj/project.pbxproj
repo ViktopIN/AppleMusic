@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84504F1A28C27C9900092136 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F1928C27C9900092136 /* LibraryView.swift */; };
+		84504F1C28C287C000092136 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F1B28C287C000092136 /* PlayerView.swift */; };
 		8467C73F28C27AAA0021C63B /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */; };
 		8467C74128C27AAA0021C63B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467C74028C27AAA0021C63B /* ContentView.swift */; };
 		8467C74328C27AAB0021C63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467C74228C27AAB0021C63B /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		84504F1928C27C9900092136 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		84504F1B28C287C000092136 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		8467C73B28C27AAA0021C63B /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		8467C74028C27AAA0021C63B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */,
 				8467C74028C27AAA0021C63B /* ContentView.swift */,
 				84504F1928C27C9900092136 /* LibraryView.swift */,
+				84504F1B28C287C000092136 /* PlayerView.swift */,
 				8467C74228C27AAB0021C63B /* Assets.xcassets */,
 				8467C74428C27AAB0021C63B /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				8467C74128C27AAA0021C63B /* ContentView.swift in Sources */,
 				84504F1A28C27C9900092136 /* LibraryView.swift in Sources */,
 				8467C73F28C27AAA0021C63B /* AppleMusicApp.swift in Sources */,
+				84504F1C28C287C000092136 /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

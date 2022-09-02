@@ -11,11 +11,24 @@ struct LibraryView: View {
     var body: some View {
         NavigationView {
             TabView {
-                Text("Mediateka Tab")
-                    .tabItem {
-                        Image(systemName: "rectangle.stack")
-                        Text("Медиатека")
-                    }
+                VStack {
+                    Spacer()
+                    Text("Ищите свою музыку?")
+                        .font(.title2)
+                        .bold()
+                    Text("Здесь появится купленная вами в\niTunes Store музыка.")
+                        .font(.subheadline)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.gray)
+                    Spacer()
+                        .frame(height: 270)
+                    PlayerView()
+                    Divider()
+                }
+                .tabItem {
+                    Image(systemName: "rectangle.stack")
+                    Text("Медиатека")
+                }
                 Text("Radio Tab")
                     .tabItem {
                         Image(systemName: "dot.radiowaves.left.and.right")
@@ -29,6 +42,12 @@ struct LibraryView: View {
             }
             .accentColor(.red)
             .navigationTitle("Медиатека")
+            .onAppear() {
+                UITabBar.appearance().backgroundColor = UIColor(red: 247/255,
+                                                                green: 246/255,
+                                                                blue: 246/255,
+                                                                alpha: 1)
+            }
         }
     }
 }
