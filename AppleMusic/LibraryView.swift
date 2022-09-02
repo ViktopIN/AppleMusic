@@ -14,16 +14,21 @@ struct LibraryView: View {
                 Text("Mediateka Tab")
                     .tabItem {
                         Image(systemName: "rectangle.stack")
-                            .renderingMode(.original)
-                            .foregroundColor(Color.red)
+                        Text("Медиатека")
                     }
-                Text("Mediateka Tab")
+                Text("Radio Tab")
                     .tabItem {
-                        Image(systemName: "rectangle.stack")
-                            .renderingMode(.original)
-                            .foregroundColor(Color.red)
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                        Text("Радио")
+                    }
+                Text("Search Tab")
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск")
                     }
             }
+            .accentColor(.red)
+            .navigationTitle("Медиатека")
         }
     }
 }
