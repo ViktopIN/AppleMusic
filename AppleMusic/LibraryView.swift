@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LibraryView: View {
+
     var body: some View {
         TabView {
             NavigationView {
@@ -16,12 +17,13 @@ struct LibraryView: View {
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             NavigationLink {
-                                EditScreenView()
+                                    EditScreenView()
+                                        .navigationBarHidden(true)
+                                        .navigationTitle("Медиатека")
                             } label: {
                                 Text("Править")
                                     .font(.title2)
                             }
-
                         }
                     }
             }
