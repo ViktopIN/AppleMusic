@@ -13,7 +13,6 @@
 		84504F1C28C287C000092136 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F1B28C287C000092136 /* PlayerView.swift */; };
 		84504F2228C28FCD00092136 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F2128C28FCD00092136 /* MainScreenView.swift */; };
 		8467C73F28C27AAA0021C63B /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */; };
-		8467C74128C27AAA0021C63B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467C74028C27AAA0021C63B /* ContentView.swift */; };
 		8467C74328C27AAB0021C63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467C74228C27AAB0021C63B /* Assets.xcassets */; };
 		8467C74628C27AAB0021C63B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467C74528C27AAB0021C63B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -26,7 +25,6 @@
 		84504F2128C28FCD00092136 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		8467C73B28C27AAA0021C63B /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
-		8467C74028C27AAA0021C63B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8467C74228C27AAB0021C63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8467C74528C27AAB0021C63B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +40,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8420857D28C3A272005F23FC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8420858028C3A28B005F23FC /* Scenes */,
+				8420857F28C3A286005F23FC /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8420857E28C3A278005F23FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8467C74228C27AAB0021C63B /* Assets.xcassets */,
+				8467C74428C27AAB0021C63B /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8420857F28C3A286005F23FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8420858028C3A28B005F23FC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8420858728C3A312005F23FC /* CommonView */,
+				8420858228C3A2B2005F23FC /* EditScreen */,
+				8420858128C3A2A5005F23FC /* LibraryScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8420858128C3A2A5005F23FC /* LibraryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8420858328C3A2CA005F23FC /* View */,
+			);
+			path = LibraryScreen;
+			sourceTree = "<group>";
+		};
+		8420858228C3A2B2005F23FC /* EditScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8420858428C3A2D7005F23FC /* View */,
+			);
+			path = EditScreen;
+			sourceTree = "<group>";
+		};
+		8420858328C3A2CA005F23FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8420858628C3A2F1005F23FC /* MainView */,
+				84504F1928C27C9900092136 /* LibraryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8420858428C3A2D7005F23FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8420858528C3A2DF005F23FC /* CellView */,
+				8420857928C36265005F23FC /* EditScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8420858528C3A2DF005F23FC /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				8420857B28C373CE005F23FC /* CellView.swift */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		8420858628C3A2F1005F23FC /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				84504F2128C28FCD00092136 /* MainScreenView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		8420858728C3A312005F23FC /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				84504F1B28C287C000092136 /* PlayerView.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
 		8467C73228C27AAA0021C63B = {
 			isa = PBXGroup;
 			children = (
@@ -61,15 +153,8 @@
 		8467C73D28C27AAA0021C63B /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
-				8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */,
-				8467C74028C27AAA0021C63B /* ContentView.swift */,
-				84504F1928C27C9900092136 /* LibraryView.swift */,
-				84504F1B28C287C000092136 /* PlayerView.swift */,
-				84504F2128C28FCD00092136 /* MainScreenView.swift */,
-				8467C74228C27AAB0021C63B /* Assets.xcassets */,
-				8467C74428C27AAB0021C63B /* Preview Content */,
-				8420857928C36265005F23FC /* EditScreenView.swift */,
-				8420857B28C373CE005F23FC /* CellView.swift */,
+				8420857E28C3A278005F23FC /* Resources */,
+				8420857D28C3A272005F23FC /* Sources */,
 			);
 			path = AppleMusic;
 			sourceTree = "<group>";
@@ -152,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8467C74128C27AAA0021C63B /* ContentView.swift in Sources */,
 				84504F2228C28FCD00092136 /* MainScreenView.swift in Sources */,
 				8420857A28C36265005F23FC /* EditScreenView.swift in Sources */,
 				84504F1A28C27C9900092136 /* LibraryView.swift in Sources */,
@@ -286,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,7 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMusic/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
