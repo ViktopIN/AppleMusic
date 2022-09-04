@@ -43,14 +43,10 @@ struct LibraryView: View {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                 }
+                Divider()
             VStack {
                 Spacer()
-                Text("Search Tab")
                 Spacer()
-                PlayerView()
-                Divider()
-                
-            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
