@@ -31,12 +31,26 @@ struct LibraryView: View {
                 Image (systemName: "rectangle.stack")
                 Text("Медиатека")
             }
-            Text("Radio Tab")
-                .tabItem {
-                    Image(systemName: "dot.radiowaves.left.and.right")
-                    Text("Радио")
+            VStack {
+                Spacer()
+                Text("Radio Tab")
+                Spacer()
+                PlayerView()
+                Divider()
+                
+            }
+            .tabItem {
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                        Text("Радио")
                 }
-            Text("Search Tab")
+            VStack {
+                Spacer()
+                Text("Search Tab")
+                Spacer()
+                PlayerView()
+                Divider()
+                
+            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
