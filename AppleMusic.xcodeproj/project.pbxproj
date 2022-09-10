@@ -15,6 +15,11 @@
 		8467C73F28C27AAA0021C63B /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */; };
 		8467C74328C27AAB0021C63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467C74228C27AAB0021C63B /* Assets.xcassets */; };
 		8467C74628C27AAB0021C63B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467C74528C27AAB0021C63B /* Preview Assets.xcassets */; };
+		84A077C128C4C0AB00AA6023 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077C028C4C0AB00AA6023 /* RadioView.swift */; };
+		84A077C528C4C20A00AA6023 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077C428C4C20A00AA6023 /* HorizontalScrollView.swift */; };
+		84A077CB28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077CA28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift */; };
+		84A077D428C4CF7D00AA6023 /* BottomLazyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077D328C4CF7D00AA6023 /* BottomLazyVStackView.swift */; };
+		84A077D628C4CF9F00AA6023 /* BottomLazyVStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077D528C4CF9F00AA6023 /* BottomLazyVStackViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		8467C73E28C27AAA0021C63B /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		8467C74228C27AAB0021C63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8467C74528C27AAB0021C63B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84A077C028C4C0AB00AA6023 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		84A077C428C4C20A00AA6023 /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		84A077CA28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollViewCell.swift; sourceTree = "<group>"; };
+		84A077D328C4CF7D00AA6023 /* BottomLazyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLazyVStackView.swift; sourceTree = "<group>"; };
+		84A077D528C4CF9F00AA6023 /* BottomLazyVStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLazyVStackViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +79,8 @@
 		8420858028C3A28B005F23FC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				8420858728C3A312005F23FC /* CommonView */,
-				8420858228C3A2B2005F23FC /* EditScreen */,
+				8420858728C3A312005F23FC /* CommonComponents */,
+				84A077BF28C4C08D00AA6023 /* RadioScreen */,
 				8420858128C3A2A5005F23FC /* LibraryScreen */,
 			);
 			path = Scenes;
@@ -79,6 +89,7 @@
 		8420858128C3A2A5005F23FC /* LibraryScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8420858228C3A2B2005F23FC /* EditScreen */,
 				8420858328C3A2CA005F23FC /* View */,
 			);
 			path = LibraryScreen;
@@ -126,12 +137,12 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		8420858728C3A312005F23FC /* CommonView */ = {
+		8420858728C3A312005F23FC /* CommonComponents */ = {
 			isa = PBXGroup;
 			children = (
 				84504F1B28C287C000092136 /* PlayerView.swift */,
 			);
-			path = CommonView;
+			path = CommonComponents;
 			sourceTree = "<group>";
 		};
 		8467C73228C27AAA0021C63B = {
@@ -165,6 +176,58 @@
 				8467C74528C27AAB0021C63B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84A077BF28C4C08D00AA6023 /* RadioScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84A077C228C4C19500AA6023 /* View */,
+			);
+			path = RadioScreen;
+			sourceTree = "<group>";
+		};
+		84A077C228C4C19500AA6023 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A077C328C4C1B800AA6023 /* Componets */,
+				84A077C028C4C0AB00AA6023 /* RadioView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84A077C328C4C1B800AA6023 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				84A077C628C4C32000AA6023 /* TopView */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		84A077C628C4C32000AA6023 /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				84A077CC28C4CF1C00AA6023 /* BottomVerticalView */,
+				84A077C728C4C33200AA6023 /* HorizontalScrollView */,
+			);
+			path = TopView;
+			sourceTree = "<group>";
+		};
+		84A077C728C4C33200AA6023 /* HorizontalScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				84A077C428C4C20A00AA6023 /* HorizontalScrollView.swift */,
+				84A077CA28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift */,
+			);
+			path = HorizontalScrollView;
+			sourceTree = "<group>";
+		};
+		84A077CC28C4CF1C00AA6023 /* BottomVerticalView */ = {
+			isa = PBXGroup;
+			children = (
+				84A077D328C4CF7D00AA6023 /* BottomLazyVStackView.swift */,
+				84A077D528C4CF9F00AA6023 /* BottomLazyVStackViewCell.swift */,
+			);
+			path = BottomVerticalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84504F2228C28FCD00092136 /* MainScreenView.swift in Sources */,
+				84A077C528C4C20A00AA6023 /* HorizontalScrollView.swift in Sources */,
+				84A077CB28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift in Sources */,
+				84A077D628C4CF9F00AA6023 /* BottomLazyVStackViewCell.swift in Sources */,
+				84A077C128C4C0AB00AA6023 /* RadioView.swift in Sources */,
 				8420857A28C36265005F23FC /* EditScreenView.swift in Sources */,
+				84A077D428C4CF7D00AA6023 /* BottomLazyVStackView.swift in Sources */,
 				84504F1A28C27C9900092136 /* LibraryView.swift in Sources */,
 				8467C73F28C27AAA0021C63B /* AppleMusicApp.swift in Sources */,
 				84504F1C28C287C000092136 /* PlayerView.swift in Sources */,
