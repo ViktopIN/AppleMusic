@@ -21,7 +21,6 @@ struct RadioView: View {
                     }
                     .padding(.leading, 21)
                 })
-                PlayerView()
             }
             .navigationTitle("Radio")
         }

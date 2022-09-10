@@ -12,41 +12,41 @@ struct LibraryView: View {
     var body: some View {
         TabView {
             NavigationView {
-                MainScreenView()
-                    .navigationTitle("Медиатека")
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            NavigationLink {
-                                    EditScreenView()
-                                        .navigationBarHidden(true)
-                                        .navigationTitle("Медиатека")
-                            } label: {
-                                Text("Править")
-                                    .font(.title2)
+                ZStack {
+                    MainScreenView()
+                        .navigationTitle("Медиатека")
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                NavigationLink {
+                                        EditScreenView()
+                                            .navigationBarHidden(true)
+                                            .navigationTitle("Медиатека")
+                                } label: {
+                                    Text("Править")
+                                        .font(.title2)
+                                        .foregroundColor(.red)
+                                }
                             }
                         }
-                    }
+                    PlayerView()
+                }
             }
             .tabItem {
                 Image (systemName: "rectangle.stack")
                 Text("Медиатека")
             }
-            VStack {
-                Spacer()
-                Text("Radio Tab")
-                Spacer()
+            ZStack {
+                RadioView()
                 PlayerView()
-                Divider()
-                
             }
-            .tabItem {
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
-                }
-                Divider()
-            VStack {
-                Spacer()
-                Spacer()
+                .tabItem {
+                            Image(systemName: "dot.radiowaves.left.and.right")
+                            Text("Радио")
+                    }
+            ZStack {
+                Text("Search Tab")
+                PlayerView()
+            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")

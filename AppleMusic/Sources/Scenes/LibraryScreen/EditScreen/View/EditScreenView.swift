@@ -51,7 +51,6 @@ struct EditScreenView: View {
                         }
                     }
                 }
-                PlayerView()
             }
         }
     }
