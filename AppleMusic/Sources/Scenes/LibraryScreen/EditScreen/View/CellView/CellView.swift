@@ -20,8 +20,10 @@ struct CellView: View {
                 .padding(.trailing, 10.0)
                 
             Text(label)
+                .font(.title2)
+                .lineLimit(1)
+                .padding(5)
         }
-        .frame(height: 60)
     }
 }
 

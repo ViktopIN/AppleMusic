@@ -20,8 +20,6 @@ struct MainScreenView: View {
                 .foregroundColor(.gray)
             Spacer()
                 .frame(height: 250)
-            PlayerView()
-            Divider()
         }
     }
 }
