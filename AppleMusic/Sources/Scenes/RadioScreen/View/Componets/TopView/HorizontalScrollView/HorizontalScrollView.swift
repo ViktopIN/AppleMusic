@@ -16,11 +16,11 @@ struct HorizontalScrollView: View {
                     "Apple Music Hits",
                     "Apple Music Hip-Hop",
                     "Apple Music Pop"]
-    
-    let row = [GridItem(.fixed(150), spacing: 5)]
+        
+    let row = [GridItem(.fixed(150))]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: row) {
+            LazyHGrid(rows: row, spacing: 10) {
                 ForEach(0..<4) { index in
                     HorizontalScrollViewCell(type: "FEATURED STATION",
                                              name: name[index],

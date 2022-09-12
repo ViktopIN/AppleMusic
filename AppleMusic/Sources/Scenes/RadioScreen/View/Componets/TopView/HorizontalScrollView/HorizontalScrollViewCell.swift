@@ -15,6 +15,8 @@ struct HorizontalScrollViewCell: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 1) {
+            Divider()
+                .padding(.bottom, 7)
             Text(type)
                 .font(.subheadline)
                 .foregroundColor(.gray)
@@ -27,7 +29,7 @@ struct HorizontalScrollViewCell: View {
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity, height: 250, alignment: .center)
+                .frame(width: .infinity, height: 220, alignment: .center)
                 .cornerRadius(10)
         }
     }
@@ -36,5 +38,6 @@ struct HorizontalScrollViewCell: View {
 struct HorizontalScrollViewCell_Previews: PreviewProvider {
     static var previews: some View {
         HorizontalScrollViewCell(type: "FEATURED STATION", name: "Soft Pop Station", producer: "Apple Music Pop", imageName: "1")
+            .previewInterfaceOrientation(.portrait)
     }
 }

@@ -11,27 +11,18 @@ struct CustomTabView: View {
     var body: some View {
         TabView {
             NavigationView {
-                ZStack {
-                    MainScreenView()
-                    PlayerView()
-                }
+                MainScreenView()
             }
             .tabItem {
                 Image (systemName: "rectangle.stack")
                 Text("Медиатека")
             }
-            ZStack {
-                RadioView()
-                PlayerView()
-            }
+            RadioView()
                 .tabItem {
                             Image(systemName: "dot.radiowaves.left.and.right")
                             Text("Радио")
                     }
-            ZStack {
-                Text("Search Tab")
-                PlayerView()
-            }
+            Text("Search Tab")
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")

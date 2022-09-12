@@ -19,7 +19,6 @@ struct MainScreenView: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(.gray)
             Spacer()
-                .frame(maxHeight: 320)
         }
             .navigationTitle("Медиатека")
             .toolbar {

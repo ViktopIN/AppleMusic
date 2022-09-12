@@ -13,11 +13,10 @@ struct RadioView: View {
             VStack {
                 ScrollView(.vertical, showsIndicators: false, content: {
                     LazyVStack {
-                        Divider()
                         HorizontalScrollView()
                         Divider()
+                            .padding(.top, 20)
                         BottomLazyVStackView()
-
                     }
                     .padding(.leading, 21)
                 })
