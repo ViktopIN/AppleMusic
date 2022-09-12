@@ -17,7 +17,9 @@ struct CustomTabView: View {
                 Image (systemName: "rectangle.stack")
                 Text("Медиатека")
             }
-            RadioView()
+            NavigationView {
+                RadioView()
+            }
                 .tabItem {
                             Image(systemName: "dot.radiowaves.left.and.right")
                             Text("Радио")

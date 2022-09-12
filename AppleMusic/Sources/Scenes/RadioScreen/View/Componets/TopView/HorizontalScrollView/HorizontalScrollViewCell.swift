@@ -15,6 +15,8 @@ struct HorizontalScrollViewCell: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 1) {
+            Spacer()
+                .frame(height: 1)
             Divider()
                 .padding(.bottom, 7)
             Text(type)

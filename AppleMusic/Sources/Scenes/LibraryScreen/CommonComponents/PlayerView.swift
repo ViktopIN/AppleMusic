@@ -28,11 +28,20 @@ struct PlayerView: View {
                     Text("LOVE")
                         .padding(.leading, 6)
                     Spacer()
-                    Image(systemName: "pause.fill")
-                        .aspectRatio(contentMode: .fill)
-                        .padding(.trailing, 5)
-                        .frame(width: 28, height: 28, alignment: .center)
-                    Image(systemName: "forward.fill")
+                    Button {
+                    } label: {
+                        Image(systemName: "pause.fill")
+                            .aspectRatio(contentMode: .fill)
+                            .padding(.trailing, 5)
+                            .frame(width: 28, height: 28, alignment: .center)
+                            .foregroundColor(.black)
+                    }
+                    Button {
+                    } label: {
+                        Image(systemName: "forward.fill")
+                            .foregroundColor(.black)
+
+                    }
                     Spacer()
                         .frame(width: 16)
                 }
