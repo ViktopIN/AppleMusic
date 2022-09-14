@@ -19,11 +19,15 @@ struct BottomLazyVStackViewCell: View {
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(8)
             VStack(alignment: .leading, spacing: 2) {
+                Spacer()
                 Text(name)
                 Text(describe)
                     .padding(.top, -4)
                     .font(.subheadline)
                     .foregroundColor(.gray)
+                Spacer()
+                Divider()
+                    .offset(y: 10)
             }
             Spacer()
         }

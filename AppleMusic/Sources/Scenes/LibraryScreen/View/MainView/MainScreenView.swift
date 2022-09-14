@@ -19,8 +19,21 @@ struct MainScreenView: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(.gray)
             Spacer()
-                .frame(height: 250)
         }
+            .navigationTitle("Медиатека")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                            EditScreenView()
+                                .navigationBarHidden(true)
+                                .navigationTitle("Медиатека")
+                    } label: {
+                        Text("Править")
+                            .font(.title2)
+                            .foregroundColor(.red)
+                    }
+                }
+            }
     }
 }
 

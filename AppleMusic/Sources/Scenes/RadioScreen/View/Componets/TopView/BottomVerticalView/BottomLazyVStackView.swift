@@ -28,7 +28,7 @@ struct BottomLazyVStackView: View {
                 .padding(.bottom, 20)
             ForEach(5..<11) { index in
                 BottomLazyVStackViewCell(name: name[index - 5], describe: describe[index - 5], imageName: ("\(index)"))
-                Divider()
+                    .padding(.top, 10)
             }
         }
     }
