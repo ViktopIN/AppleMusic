@@ -20,13 +20,17 @@ struct HorizontalScrollView: View {
     let row = [GridItem(.fixed(150))]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: row, spacing: 10) {
-                ForEach(0..<4) { index in
-                    HorizontalScrollViewCell(type: "FEATURED STATION",
-                                             name: name[index],
-                                             producer: producer[index],
-                                             imageName: "\(index + 1)")
+            LazyHGrid(rows: row) {
+            TabView {
+                    ForEach(0..<4) { index in
+                        HorizontalScrollViewCell(type: "FEATURED STATION",
+                                                 name: name[index],
+                                                 producer: producer[index],
+                                                 imageName: "\(index + 1)")
+                  }
                 }
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .frame(width: Metrics.frameWidth, height: Metrics.frameHeight)
             }
         }
     }
@@ -35,5 +39,12 @@ struct HorizontalScrollView: View {
 struct HorizontalScrollView_Previews: PreviewProvider {
     static var previews: some View {
         HorizontalScrollView()
+    }
+}
+
+extension HorizontalScrollView {
+    enum Metrics {
+        static let frameWidth: CGFloat = UIScreen.main.bounds.width - 16
+        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 3
     }
 }
