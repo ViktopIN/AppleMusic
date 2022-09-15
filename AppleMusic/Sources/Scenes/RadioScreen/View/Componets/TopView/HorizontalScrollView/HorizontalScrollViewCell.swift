@@ -14,26 +14,25 @@ struct HorizontalScrollViewCell: View {
     let imageName: String
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 1) {
+        VStack(alignment: .leading, spacing: 2) {
             Spacer()
-                .frame(height: 1)
+                .frame(height: 2)
             Divider()
-                .padding(.bottom, 7)
+                .padding([.trailing, .bottom], 15)
             Text(type)
-                .font(.subheadline)
+                .font(.caption)
                 .foregroundColor(.gray)
             Text(name)
-                .font(.title)
+                .font(.title2)
             Text(producer)
-                .font(.title)
-                .padding(.top, -7)
+                .font(.title2)
                 .foregroundColor(.gray)
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity, height: 220, alignment: .center)
                 .cornerRadius(10)
         }
+        .padding(.trailing, 10)
     }
 }
 

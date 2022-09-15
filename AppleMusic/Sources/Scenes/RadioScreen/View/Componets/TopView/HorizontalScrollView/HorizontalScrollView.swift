@@ -17,7 +17,7 @@ struct HorizontalScrollView: View {
                     "Apple Music Hip-Hop",
                     "Apple Music Pop"]
         
-    let row = [GridItem(.fixed(150))]
+    let row = [GridItem(spacing: 10)]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: row) {
@@ -45,6 +45,6 @@ struct HorizontalScrollView_Previews: PreviewProvider {
 extension HorizontalScrollView {
     enum Metrics {
         static let frameWidth: CGFloat = UIScreen.main.bounds.width - 16
-        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 3
+        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 2.3
     }
 }
