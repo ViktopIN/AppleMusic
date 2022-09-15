@@ -25,7 +25,6 @@ struct BottomLazyVStackView: View {
             Text("Stations")
                 .font(.largeTitle)
                 .bold()
-                .padding(.bottom, 20)
             ForEach(5..<11) { index in
                 BottomLazyVStackViewCell(name: name[index - 5], describe: describe[index - 5], imageName: ("\(index)"))
                     .padding(.top, 10)

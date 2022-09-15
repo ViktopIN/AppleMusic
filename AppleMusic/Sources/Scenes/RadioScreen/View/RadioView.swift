@@ -15,7 +15,8 @@ struct RadioView: View {
                 HorizontalScrollView()
                     .navigationTitle("Radio")
                 Divider()
-                    .padding(.top, 20)
+                    .padding(.top, 10)
+                    .padding(.trailing, 10)
                 BottomLazyVStackView()
             }
             .padding(.leading, 21)
