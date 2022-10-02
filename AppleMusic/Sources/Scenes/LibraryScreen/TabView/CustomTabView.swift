@@ -24,7 +24,9 @@ struct CustomTabView: View {
                             Image(systemName: "dot.radiowaves.left.and.right")
                             Text("Радио")
                     }
-            Text("Search Tab")
+            NavigationView {
+                MainSearchScreen()
+            }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
