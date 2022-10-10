@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct MainSearchScreen: View {
+    @State var searchText = ""
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                OwnMediaSearchTextField()
-                Divider()
-                    .padding(.top, 12)
-                MainScrollView()
+        VStack {
+            ScrollView {
+                LazyVStack {
+                    MainScrollView()
+                }
+                .navigationTitle("Search")
             }
+        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Your Media") {
+            SearchBarScreen()
         }
     }
 }

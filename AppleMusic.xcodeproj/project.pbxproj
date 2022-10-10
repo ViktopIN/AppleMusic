@@ -21,6 +21,7 @@
 		8446D45028E9710800A49966 /* BottomPartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446D44F28E9710800A49966 /* BottomPartViewCell.swift */; };
 		8446D45228E9712100A49966 /* BottomPartScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446D45128E9712100A49966 /* BottomPartScrollView.swift */; };
 		8446D45428E9714400A49966 /* SecondScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446D45328E9714400A49966 /* SecondScreenView.swift */; };
+		8446D45C28EC329800A49966 /* SearchBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8446D45B28EC329800A49966 /* SearchBarScreen.swift */; };
 		84504F1A28C27C9900092136 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F1928C27C9900092136 /* LibraryView.swift */; };
 		84504F1C28C287C000092136 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F1B28C287C000092136 /* PlayerView.swift */; };
 		84504F2228C28FCD00092136 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504F2128C28FCD00092136 /* MainScreenView.swift */; };
@@ -50,6 +51,7 @@
 		8446D44F28E9710800A49966 /* BottomPartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPartViewCell.swift; sourceTree = "<group>"; };
 		8446D45128E9712100A49966 /* BottomPartScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPartScrollView.swift; sourceTree = "<group>"; };
 		8446D45328E9714400A49966 /* SecondScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenView.swift; sourceTree = "<group>"; };
+		8446D45B28EC329800A49966 /* SearchBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarScreen.swift; sourceTree = "<group>"; };
 		84504F1928C27C9900092136 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		84504F1B28C287C000092136 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		84504F2128C28FCD00092136 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		8446D41128E71E0600A49966 /* SearchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8446D45928EC324700A49966 /* SearchBarScreen */,
 				8446D44228E96FDE00A49966 /* SecondScreen */,
 				8446D43D28E96F7100A49966 /* MainScreen */,
 			);
@@ -262,6 +265,22 @@
 				8446D45128E9712100A49966 /* BottomPartScrollView.swift */,
 			);
 			path = BottomPart;
+			sourceTree = "<group>";
+		};
+		8446D45928EC324700A49966 /* SearchBarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8446D45A28EC327500A49966 /* View */,
+			);
+			path = SearchBarScreen;
+			sourceTree = "<group>";
+		};
+		8446D45A28EC327500A49966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8446D45B28EC329800A49966 /* SearchBarScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		84518D7728CF7088008076A3 /* TabView */ = {
@@ -435,6 +454,7 @@
 				84518D7928CF70A9008076A3 /* CustomTabView.swift in Sources */,
 				84A077D628C4CF9F00AA6023 /* BottomLazyVStackViewCell.swift in Sources */,
 				8446D41428E71E4B00A49966 /* String extension.swift in Sources */,
+				8446D45C28EC329800A49966 /* SearchBarScreen.swift in Sources */,
 				8446D44528E9700100A49966 /* CategoryModel.swift in Sources */,
 				8446D43728E96EB700A49966 /* MainSearchScreen.swift in Sources */,
 				84A077C128C4C0AB00AA6023 /* RadioView.swift in Sources */,

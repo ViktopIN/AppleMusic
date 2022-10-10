@@ -26,6 +26,7 @@ struct CustomTabView: View {
                     }
             NavigationView {
                 MainSearchScreen()
+                    .padding()
             }
                 .tabItem {
                     Image(systemName: "magnifyingglass")

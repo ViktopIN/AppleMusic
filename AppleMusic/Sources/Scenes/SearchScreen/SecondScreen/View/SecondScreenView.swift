@@ -11,17 +11,22 @@ struct SecondScreenView: View {
     let secondScreenModel: CategoryModel
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            LazyVStack(alignment: .leading) {
-                Text(secondScreenModel.navigationTitle.longTitleWrap())
-                    .bold()
-                    .font(.largeTitle)
-                TopPartView(cellsModel: secondScreenModel.topPartValues)
-                Divider()
-                BottomPartView(bottomPartModel: secondScreenModel.bottomPartValues)
+        VStack(alignment: .leading, spacing: 3) {
+            Text(secondScreenModel.navigationTitle.longTitleWrap())
+                .font(.largeTitle)
+                .bold()
+                .padding(.leading)
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVStack(alignment: .leading) {
+                    TopPartView(cellsModel: secondScreenModel.topPartValues)
+                    Divider()
+                    BottomPartView(bottomPartModel: secondScreenModel.bottomPartValues)
+                        .padding(.bottom, 80)
+                }
+                .padding(.leading)
             }
-            .padding(.leading)
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -44,7 +44,7 @@ struct HorizontalScrollView_Previews: PreviewProvider {
 
 extension HorizontalScrollView {
     enum Metrics {
-        static let frameWidth: CGFloat = UIScreen.main.bounds.width - 16
-        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 2.3
+        static let frameWidth: CGFloat = UIScreen.main.bounds.width -  15
+        static let frameHeight: CGFloat = UIScreen.main.bounds.height / 2.4
     }
 }
