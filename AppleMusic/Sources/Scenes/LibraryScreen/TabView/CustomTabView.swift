@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomTabView: View {
+    @State var isSearchBarActive = false
     var body: some View {
         TabView {
             NavigationView {
@@ -24,7 +25,7 @@ struct CustomTabView: View {
                             Image(systemName: "dot.radiowaves.left.and.right")
                             Text("Радио")
                     }
-            Text("Search Tab")
+            SearchView(isSearchBarActive: $isSearchBarActive)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
