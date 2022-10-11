@@ -15,9 +15,9 @@ struct LibraryView: View {
                 .accentColor(.red)
                 .onAppear() {
                     UITabBar.appearance().backgroundColor = UIColor(red: 247/255,
-                                                                    green: 246/255,
-                                                                    blue: 246/255,
-                                                                    alpha: 1)
+                                green: 246/255,
+                                blue: 246/255,
+                                alpha: 1)
             }
             PlayerView()
                 .offset(y: -48)
