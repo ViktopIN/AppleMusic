@@ -9,10 +9,10 @@ import Foundation
 
 extension String {
     func longTitleWrap() -> String {
-        if self.count >= 8 {
+        if self.count >= 14 {
             var selfString = self
             selfString.insert(contentsOf: "-\n",
-                              at: selfString.index(startIndex, offsetBy: 8))
+                              at: selfString.index(startIndex, offsetBy: 14))
             return selfString
         } else {
             return self

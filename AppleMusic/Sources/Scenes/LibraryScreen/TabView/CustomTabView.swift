@@ -30,6 +30,11 @@ struct CustomTabView: View {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
                 }
+            UIKitAttachment()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Поиск UIKit")
+                }
             }
     }
 }

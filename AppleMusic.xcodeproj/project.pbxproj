@@ -40,6 +40,11 @@
 		846D510628F5962D00F27220 /* PlayerOptionsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D510528F5962D00F27220 /* PlayerOptionsButtonView.swift */; };
 		846D510828F5966700F27220 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D510728F5966700F27220 /* ColorExtension.swift */; };
 		846D510A28F5969E00F27220 /* FullPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D510928F5969E00F27220 /* FullPlayerView.swift */; };
+		846D511228F598C900F27220 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D511128F598C900F27220 /* CollectionViewCell.swift */; };
+		846D511428F59A6300F27220 /* MainUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D511328F59A6300F27220 /* MainUIKitView.swift */; };
+		846D511728F59ABD00F27220 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D511628F59ABD00F27220 /* HeaderView.swift */; };
+		846D511928F59B1000F27220 /* UIKitAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D511828F59B1000F27220 /* UIKitAttachment.swift */; };
+		846D511B28F59B3B00F27220 /* MainUIKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D511A28F59B3B00F27220 /* MainUIKitController.swift */; };
 		84A077C128C4C0AB00AA6023 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077C028C4C0AB00AA6023 /* RadioView.swift */; };
 		84A077C528C4C20A00AA6023 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077C428C4C20A00AA6023 /* HorizontalScrollView.swift */; };
 		84A077CB28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A077CA28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift */; };
@@ -82,6 +87,11 @@
 		846D510528F5962D00F27220 /* PlayerOptionsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOptionsButtonView.swift; sourceTree = "<group>"; };
 		846D510728F5966700F27220 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		846D510928F5969E00F27220 /* FullPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerView.swift; sourceTree = "<group>"; };
+		846D511128F598C900F27220 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		846D511328F59A6300F27220 /* MainUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIKitView.swift; sourceTree = "<group>"; };
+		846D511628F59ABD00F27220 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		846D511828F59B1000F27220 /* UIKitAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAttachment.swift; sourceTree = "<group>"; };
+		846D511A28F59B3B00F27220 /* MainUIKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIKitController.swift; sourceTree = "<group>"; };
 		84A077C028C4C0AB00AA6023 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		84A077C428C4C20A00AA6023 /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		84A077CA28C4C5FC00AA6023 /* HorizontalScrollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollViewCell.swift; sourceTree = "<group>"; };
@@ -131,6 +141,7 @@
 		8420858028C3A28B005F23FC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				846D510B28F5986F00F27220 /* SearchUIKitScreen */,
 				846D50E628F5744900F27220 /* SearchScreen */,
 				84A077BF28C4C08D00AA6023 /* RadioScreen */,
 				8420858128C3A2A5005F23FC /* LibraryScreen */,
@@ -365,6 +376,42 @@
 			path = PlayerViewComposition;
 			sourceTree = "<group>";
 		};
+		846D510B28F5986F00F27220 /* SearchUIKitScreen */ = {
+			isa = PBXGroup;
+			children = (
+				846D510D28F5988200F27220 /* Controller */,
+				846D510C28F5987D00F27220 /* View */,
+			);
+			path = SearchUIKitScreen;
+			sourceTree = "<group>";
+		};
+		846D510C28F5987D00F27220 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				846D510E28F5988E00F27220 /* Cell */,
+				846D511328F59A6300F27220 /* MainUIKitView.swift */,
+				846D511628F59ABD00F27220 /* HeaderView.swift */,
+				846D511828F59B1000F27220 /* UIKitAttachment.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		846D510D28F5988200F27220 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				846D511A28F59B3B00F27220 /* MainUIKitController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		846D510E28F5988E00F27220 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				846D511128F598C900F27220 /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		84A077BF28C4C08D00AA6023 /* RadioScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,20 +550,25 @@
 				846D50F028F579B800F27220 /* ModelData.swift in Sources */,
 				846D510228F595DC00F27220 /* PlayerMediaButtonsView.swift in Sources */,
 				8446D44528E9700100A49966 /* CategoryModel.swift in Sources */,
+				846D511428F59A6300F27220 /* MainUIKitView.swift in Sources */,
 				846D50EC28F5779F00F27220 /* TrackModel.swift in Sources */,
 				84A077C128C4C0AB00AA6023 /* RadioView.swift in Sources */,
 				846D510628F5962D00F27220 /* PlayerOptionsButtonView.swift in Sources */,
 				846D510828F5966700F27220 /* ColorExtension.swift in Sources */,
 				8420857A28C36265005F23FC /* EditScreenView.swift in Sources */,
 				84A077D428C4CF7D00AA6023 /* BottomLazyVStackView.swift in Sources */,
+				846D511B28F59B3B00F27220 /* MainUIKitController.swift in Sources */,
 				846D510A28F5969E00F27220 /* FullPlayerView.swift in Sources */,
 				846D50F428F57CAE00F27220 /* SearchInitialView.swift in Sources */,
+				846D511728F59ABD00F27220 /* HeaderView.swift in Sources */,
 				84504F1A28C27C9900092136 /* LibraryView.swift in Sources */,
 				8446D44B28E970B100A49966 /* TopPartCell.swift in Sources */,
 				8467C73F28C27AAA0021C63B /* AppleMusicApp.swift in Sources */,
 				846D510428F595F800F27220 /* PlayerVolumeView.swift in Sources */,
 				84504F1C28C287C000092136 /* PlayerView.swift in Sources */,
+				846D511928F59B1000F27220 /* UIKitAttachment.swift in Sources */,
 				8420857C28C373CE005F23FC /* CellView.swift in Sources */,
+				846D511228F598C900F27220 /* CollectionViewCell.swift in Sources */,
 				8446D45028E9710800A49966 /* BottomPartViewCell.swift in Sources */,
 				8446D44928E9709400A49966 /* TopPartView.swift in Sources */,
 				8446D44E28E970E900A49966 /* BottomPartView.swift in Sources */,
