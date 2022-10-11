@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PlayerView: View {
+    @State private var isFullScreenPlayer = false
+    @State var isPlaying = false
     var body: some View {
         VStack {
             Spacer()
@@ -29,13 +31,15 @@ struct PlayerView: View {
                         .padding(.leading, 6)
                     Spacer()
                     Button {
+                        isPlaying.toggle()
                     } label: {
-                        Image(systemName: "pause.fill")
+                        Image(systemName: isPlaying ? "play.fill" : "pause.fill")
                             .aspectRatio(contentMode: .fill)
                             .padding(.trailing, 5)
                             .frame(width: 28, height: 28, alignment: .center)
                             .foregroundColor(.black)
                     }
+                
                     Button {
                     } label: {
                         Image(systemName: "forward.fill")
@@ -53,6 +57,12 @@ struct PlayerView: View {
                                       green: 246/255,
                                       blue: 246/255,
                                       alpha: 1)))
+        }
+        .onTapGesture {
+            isFullScreenPlayer.toggle()
+        }
+        .fullScreenCover(isPresented: $isFullScreenPlayer) {
+            FullPlayerView(isPlaying: $isPlaying)
         }
     }
 }
