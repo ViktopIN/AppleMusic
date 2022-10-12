@@ -141,6 +141,7 @@
 		8420858028C3A28B005F23FC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8420858728C3A312005F23FC /* CommonComponents */,
 				846D510B28F5986F00F27220 /* SearchUIKitScreen */,
 				846D50E628F5744900F27220 /* SearchScreen */,
 				84A077BF28C4C08D00AA6023 /* RadioScreen */,
@@ -152,9 +153,6 @@
 		8420858128C3A2A5005F23FC /* LibraryScreen */ = {
 			isa = PBXGroup;
 			children = (
-				8420858728C3A312005F23FC /* CommonComponents */,
-				84518D7728CF7088008076A3 /* TabView */,
-				8420858228C3A2B2005F23FC /* EditScreen */,
 				8420858328C3A2CA005F23FC /* View */,
 			);
 			path = LibraryScreen;
@@ -171,6 +169,8 @@
 		8420858328C3A2CA005F23FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84518D7728CF7088008076A3 /* TabView */,
+				8420858228C3A2B2005F23FC /* EditScreen */,
 				8420858628C3A2F1005F23FC /* MainView */,
 				84504F1928C27C9900092136 /* LibraryView.swift */,
 			);
