@@ -21,16 +21,21 @@ struct CustomTabView: View {
             NavigationView {
                 RadioView()
             }
-                .tabItem {
-                            Image(systemName: "dot.radiowaves.left.and.right")
-                            Text("Радио")
-                    }
+            .tabItem {
+                Image(systemName: "dot.radiowaves.left.and.right")
+                Text("Радио")
+                }
             SearchView(isSearchBarActive: $isSearchBarActive)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Поиск")
                 }
-            }
+            UIKitAttachment()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Поиск UIKit")
+                }
+        }
     }
 }
 

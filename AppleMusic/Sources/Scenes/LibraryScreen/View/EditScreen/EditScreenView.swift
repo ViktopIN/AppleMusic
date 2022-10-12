@@ -24,11 +24,30 @@ struct EditScreenView: View {
         UINavigationBar.setAnimationsEnabled(false)
     }
     
-    @State private var listImage = ["music.note.list", "music.mic", "square.stack","music.note",  "tv", "music.note.tv", "guitars", "person.2.crop.square.stack", "music.quarternote.3", "arrow.down.circle", "music.note.house"]
-    @State private var listLabel = ["Плейлисты", "Артисты", "Альбомы", "Песни", "Телешоу и фильмы", "Видеоклипы", "Жанры", "Сборники", "Авторы", "Загружено", "Домашняя коллекция"]
+    @State private var listImage = ["music.note.list",
+                                    "music.mic",
+                                    "square.stack",
+                                    "music.note",
+                                    "tv",
+                                    "music.note.tv",
+                                    "guitars",
+                                    "person.2.crop.square.stack",
+                                    "music.quarternote.3",
+                                    "arrow.down.circle",
+                                    "music.note.house"]
+    @State private var listLabel = ["Плейлисты",
+                                    "Артисты",
+                                    "Альбомы",
+                                    "Песни",
+                                    "Телешоу и фильмы",
+                                    "Видеоклипы",
+                                    "Жанры",
+                                    "Сборники",
+                                    "Авторы",
+                                    "Загружено",
+                                    "Домашняя коллекция"]
     
     var body: some View {
-    
         NavigationView {
             VStack {
                 List(selection: $selection) {
